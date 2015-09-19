@@ -12,9 +12,9 @@ public class TimePickerView: UIDatePicker{
     private var selectCallback: ((date: NSDate) -> ())!
     
     /// initialization
-    /// :param: `UIDatePickerMode`: picker mode .Date or .Time
-    /// :param: `NSDate`: start date
-    /// :param: `(object: String) -> ()`: on selection callback. Usually to change a view element content
+    /// - parameter `UIDatePickerMode`:: picker mode .Date or .Time
+    /// - parameter `NSDate`:: start date
+    /// - parameter `(object:: String) -> ()`: on selection callback. Usually to change a view element content
     public init(pickerMode: UIDatePickerMode, startDate: NSDate, selectCallback: (date: NSDate) -> ()){
         super.init(frame: CGRectZero)
         self.selectCallback = selectCallback
@@ -28,7 +28,7 @@ public class TimePickerView: UIDatePicker{
         self.addTarget(self, action: "onDateChange:", forControlEvents: .AllEvents)
     }
     
-    public required init(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     

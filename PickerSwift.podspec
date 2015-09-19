@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
 
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.name         = "PickerSwift"
-  s.version      = "0.9.0"
+  s.version      = "0.9.1"
   s.summary      = "UIValuePicker and UIDatePicker wrapper in swift."
 
   s.description  = <<-DESC
