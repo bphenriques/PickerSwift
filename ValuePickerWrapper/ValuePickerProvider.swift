@@ -13,8 +13,8 @@ public class PickerProvider: NSObject{
     private let callback: (component: Int, row: Int, value: String) -> ()
     
     /// initializing
-    /// :param: `(component: Int, row: Int, value: String) -> ()`: selection call back
-    /// :param: `[String]`: array of possible values
+    /// - parameter `(component:: Int, row: Int, value: String) -> ()`: selection call back
+    /// - parameter `[String]`:: array of possible values
     public init(selectedCall: (component: Int, row: Int, value: String)->(), values: [String]) {
         possibleValues = values
         callback = selectedCall
@@ -30,7 +30,7 @@ extension PickerProvider : UIPickerViewDataSource, UIPickerViewDelegate  {
         return 1
     }
     
-    public func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String {
+    public func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return possibleValues[row];
     }
     
