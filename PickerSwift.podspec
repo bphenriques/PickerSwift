@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.summary      = "UIValuePicker and UIDatePicker wrapper in swift."
 
   s.description  = <<-DESC
-		   UIValuePicker and UIDatePicker wrapper in swift                   
+		   UIValuePicker and UIDatePicker wrapper in swift. Encapsulates common picker to reduce boiler plate code                   
 
                    DESC
 
