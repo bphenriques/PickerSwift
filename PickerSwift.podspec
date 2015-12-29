@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
 
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.name         = "PickerSwift"
-  s.version      = "0.9.1"
+  s.version      = "0.9.3"
   s.summary      = "UIValuePicker and UIDatePicker wrapper in swift."
 
   s.description  = <<-DESC
@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
 
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  s.source       = { :git => "https://github.com/bphenriques/PickerSwift.git", :tag => "0.9.1" }
+  s.source       = { :git => "https://github.com/bphenriques/PickerSwift.git", :tag => "0.9.3" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
