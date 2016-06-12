@@ -21,7 +21,7 @@ public class TimePickerView: UIDatePicker{
         
         self.datePickerMode = pickerMode
         self.date = startDate
-        self.addTarget(self, action: "onDateChange:", forControlEvents: .AllEvents)
+        self.addTarget(self, action: #selector(TimePickerView.onDateChange(_:)), forControlEvents: .AllEvents)
     }
     
     public required init?(coder aDecoder: NSCoder) {
